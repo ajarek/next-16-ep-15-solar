@@ -1,65 +1,10 @@
-import Image from "next/image";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+    <div className="min-h-screen flex flex-col items-center justify-start bg-background font-sans">
+  <Header />
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae omnis ipsam veritatis aspernatur, odio repellat asperiores, dignissimos sed suscipit at voluptas sequi saepe reprehenderit officia impedit tenetur esse ut libero rem. Veritatis consectetur voluptas cum accusamus voluptatum voluptatibus, animi a porro laboriosam eveniet fuga adipisci? Ad iure saepe molestiae minima alias. Illum facilis cumque dicta unde doloremque excepturi beatae voluptatem sapiente asperiores? Dolores voluptate optio, eius ad inventore laudantium soluta iusto repellendus doloribus voluptatum adipisci natus minima quam nostrum sed consequuntur, nisi nesciunt. Officiis nihil omnis quia harum porro dicta reiciendis ea, sequi fuga quis explicabo a nostrum rerum. Fuga laboriosam doloremque ullam commodi inventore, perspiciatis voluptatibus soluta nulla adipisci, expedita aut possimus corporis eligendi facere! Porro doloremque reiciendis sed corrupti! Incidunt fugiat rem qui, odio fuga, enim iure ut eum recusandae officia harum possimus ad reiciendis tempore perferendis perspiciatis voluptas autem quod voluptate nemo, voluptatum aspernatur. Neque sit perspiciatis, repellat optio earum incidunt error suscipit, vero vel nemo adipisci ut consequatur sunt nihil corporis aliquam soluta. Nulla perferendis accusamus doloribus adipisci ipsam excepturi incidunt similique commodi officiis! Obcaecati, deserunt impedit aliquam ratione error aut? Culpa debitis, voluptates quidem excepturi expedita amet totam soluta sapiente itaque est provident recusandae animi, adipisci, perspiciatis minima exercitationem quia officia veniam deserunt minus architecto praesentium voluptatum laborum delectus. Minima molestiae fuga sequi, autem quia nesciunt illum voluptatibus saepe mollitia obcaecati minus quaerat unde, qui molestias rem libero culpa quisquam tempore a consequuntur est voluptates! Culpa eveniet quo eum perspiciatis dolor exercitationem. Consequatur illo harum tempora! In iusto neque explicabo distinctio, maxime voluptatem et molestiae quod quia non commodi hic, debitis tenetur esse beatae similique suscipit. Quaerat hic ea ad veritatis. Eius obcaecati ex, excepturi iste aut sint omnis debitis, amet alias illum ducimus similique exercitationem quam eos aliquam deleniti repudiandae doloribus numquam iusto cum voluptas quis accusamus est reprehenderit. Quae, iusto cum iure illum quisquam nulla facilis maiores, natus sequi saepe aspernatur rem vel provident blanditiis. Est, natus accusantium! Ipsam, illo aspernatur. Omnis, modi itaque. Vero quaerat animi facere vitae eos voluptatum, incidunt commodi id est odio fugit, distinctio, quae eum voluptatem culpa dignissimos. Magni tempora aliquam molestias illo non sed quidem, mollitia consequuntur modi in quaerat explicabo illum aspernatur, commodi atque, unde temporibus veniam odio quos? Libero officia beatae repellendus amet consequuntur maiores explicabo, illum quidem aperiam minus, maxime, veritatis aut velit recusandae? Nihil, facere obcaecati reprehenderit placeat perferendis harum aperiam voluptate maiores dolorem eaque impedit adipisci repellendus. Modi, excepturi asperiores. At autem dolorem, aliquid qui ducimus incidunt recusandae enim accusantium adipisci unde, eos, officiis id blanditiis eveniet modi dignissimos velit? Mollitia ipsum, molestiae veniam, velit, eveniet inventore deleniti doloremque molestias suscipit qui eaque amet. Officia officiis consequatur aperiam ipsa, quo libero illo hic assumenda facere quos corporis voluptatibus dolorem tempore earum laudantium. Inventore doloremque earum excepturi numquam, impedit nesciunt laudantium! Non possimus quas praesentium nemo error. Repellat sequi aspernatur ratione magnam corrupti culpa hic rem debitis recusandae odit. Maiores unde ab est repudiandae asperiores neque aliquam atque. Rem molestias esse tempore nesciunt.</p>
     </div>
   );
 }
