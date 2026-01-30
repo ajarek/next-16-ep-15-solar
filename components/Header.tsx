@@ -1,5 +1,6 @@
 import Image from "next/image"
-import { Button } from "./ui/button"
+import { Button } from "@/components/ui/moving-border";
+import TextType from "./TextType"
 
 const Header = () => {
   return (
@@ -7,15 +8,28 @@ const Header = () => {
       <Image src='/images/hero.webp' alt='Logo' fill className='object-cover' />
       <div className='absolute inset-0 bg-black opacity-25'></div>
       <div className='absolute inset-0 flex flex-col items-center justify-center gap-4'>
-        <h1 className='text-5xl text-center font-bold text-white'>
-          Sprzedaż i Montaż paneli słonecznych
-        </h1>
+        <TextType
+          text={["Sprzedaż i Montaż Paneli Słonecznych"]}
+          typingSpeed={75}
+          pauseDuration={1500}
+          showCursor
+          cursorCharacter='_'
+          deletingSpeed={50}
+          variableSpeedEnabled={false}
+          variableSpeedMin={60}
+          variableSpeedMax={120}
+          cursorBlinkDuration={0.5}
+          className='text-5xl text-center font-bold text-white'
+        />
         <p className='text-center text-white text-xl'>
           Uzyskaj bezpłatną wycenę
         </p>
-        <Button className='mt-4 rounded px-6 py-2 cursor-pointer'>
-          Zacznij teraz
-        </Button>
+        <Button
+        borderRadius="1.75rem"
+        className=" bg-transparent border text-xl cursor-pointer hover:bg-primary/50"
+      >
+        Zacznij teraz
+      </Button>
       </div>
     </div>
   )

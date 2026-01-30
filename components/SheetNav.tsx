@@ -1,0 +1,45 @@
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetFooter,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
+import { Menu } from "lucide-react"
+import Link from "next/link"
+
+export function SheetNav() {
+  return (
+    <Sheet>
+      <SheetTrigger asChild className='lg:hidden'>
+        <Button variant='outline' className='text-xl cursor-pointer bg-transparent border-none'>
+          <Menu />
+        </Button>
+      </SheetTrigger>
+      <SheetContent className=' lg:hidden opacity-75'>
+        <SheetHeader>
+          <SheetTitle>Menu Nawigacyjne</SheetTitle>
+        </SheetHeader>
+        <div className='flex flex-col items-start gap-4 text-xl  font-semibold px-2'>
+          <Link href='/products' className='hover:underline hover:text-primary transition-all duration-300'>Produkty</Link>
+          <Link href='/services' className='hover:underline hover:text-primary transition-all duration-300'>Usługi</Link>
+          <Link href='/solutions' className='hover:underline hover:text-primary transition-all duration-300'>Rozwiązania</Link>
+          <Link href='/resources' className='hover:underline hover:text-primary transition-all duration-300'>Zasoby</Link>
+          <Link href='/about' className='hover:underline hover:text-primary transition-all duration-300'>O nas</Link>
+          <Link href='/contact' className='hover:underline hover:text-primary transition-all duration-300'>Kontakt</Link>
+        </div>
+        <SheetFooter>
+          <SheetClose asChild>
+            <Button variant='outline' className='text-xl cursor-pointer'>Zamknij</Button>
+          </SheetClose>
+        </SheetFooter>
+      </SheetContent>
+    </Sheet>
+  )
+}
