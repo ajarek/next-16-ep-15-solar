@@ -2,16 +2,25 @@ import Image from "next/image"
 import { Button } from "@/components/ui/moving-border"
 import Link from "next/link"
 
-const SolarPanel = () => {
+const EnergyManagement = () => {
   return (
-    <div className='grid flex-col-reverse grid-cols-1 md:grid-cols-2 gap-4 px-8'>
+    <div className='grid grid-cols-1 md:grid-cols-2 gap-4 px-8'>
+         <div className='relative px-8'>
+        <Image
+          src='/images/energy-storage.webp'
+          alt='Energy Storage'
+          width={720}
+          height={480}
+          className='rounded-lg'
+        />
+      </div>
       <div className='w-full max-w-xl flex flex-col justify-center gap-4 px-8'>
-        <p>Panele Słoneczne</p>
-        <h1 className="text-4xl font-bold">Wysokiej jakości panele słoneczne do domu.</h1>
+        <p>Magazynowanie energii</p>
+        <h1 className="text-4xl font-bold">Nowoczesne rozwiązania w zakresie zarządzania energią.</h1>
         <p>
           Zapewniamy kompleksową obsługę od projektu po instalację.
           <br />
-          Nasze panele słoneczne są wykonane z najwyższej jakości materiałów i
+          Nasze magazyny energii są wykonane z najwyższej jakości materiałów i
           są objęte długoletnią gwarancją.
           <br />
           Zapewniamy konkurencyjne ceny i szybką realizację zamówienia.
@@ -29,17 +38,9 @@ const SolarPanel = () => {
           Dowiedz się więcej
         </Button>
       </div>
-      <div className='relative px-8'>
-        <Image
-          src='/images/solar-homes.webp'
-          alt='Solar Panel'
-          width={720}
-          height={480}
-          className='rounded-lg'
-        />
-      </div>
+     
     </div>
   )
 }
 
-export default SolarPanel
+export default EnergyManagement
