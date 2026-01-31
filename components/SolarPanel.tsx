@@ -4,8 +4,8 @@ import Link from "next/link"
 
 const SolarPanel = () => {
   return (
-    <div className='grid flex-col-reverse grid-cols-1 md:grid-cols-2 gap-4 px-8'>
-      <div className='w-full max-w-xl flex flex-col justify-center gap-4 px-8'>
+    <div className='grid flex-col-reverse grid-cols-1 md:grid-cols-2 gap-4 px-4 md:px-8'>
+      <div className='w-full max-w-xl flex flex-col justify-center gap-4 px-4 md:px-8'>
         <p>Panele Słoneczne</p>
         <h1 className="text-4xl font-bold">Wysokiej jakości panele słoneczne do domu.</h1>
         <p>

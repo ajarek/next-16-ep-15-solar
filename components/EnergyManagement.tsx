@@ -4,7 +4,7 @@ import Link from "next/link"
 
 const EnergyManagement = () => {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 gap-4 px-8'>
+    <div className='grid grid-cols-1 md:grid-cols-2 gap-4 px-4 md:px-8'>
          <div className='relative px-8'>
         <Image
           src='/images/energy-storage.webp'
@@ -14,7 +14,7 @@ const EnergyManagement = () => {
           className='rounded-lg'
         />
       </div>
-      <div className='w-full max-w-xl flex flex-col justify-center gap-4 px-8'>
+      <div className='w-full max-w-xl flex flex-col justify-center gap-4 px-4 md:px-8'>
         <p>Magazynowanie energii</p>
         <h1 className="text-4xl font-bold">Nowoczesne rozwiązania w zakresie zarządzania energią.</h1>
         <p>
