@@ -1,0 +1,74 @@
+[
+   {
+      "id": 1,
+      "quantity": 1,
+      "name": "Elastyczny Panel Solarny ALLPOWERS SF100 100W",
+      "description": "Elastyczne panele słoneczne ALLPOWERS SF100 są wykonane z monokrystalicznych ogniw słonecznych, których współczynnik konwersji może osiągnąć 22%-25%. Powierzchnia pokryta jest strukturą plastra miodu ETFE, a nierówności tworzą załamanie światła, co pozwala zbierać światło słoneczne z różnych kątów. W połączeniu z portem Solar Connector o minimalnych stratach, możesz uzyskać więcej energii w tym samym czasie. Doskonały wybór do kamperów, dachów, przyczep kempingowych, łodzi, domków, szop, namiotów i jachtów.",
+      "image": "/images/panel-100.webp",
+      "price": 600
+   },
+   {
+      "id": 2,
+      "quantity": 1,
+      "name": "Elastyczny Panel Solarny ALLPOWERS SF100 100W",
+      "description": "Składany panel słoneczny ALLPOWERS 400W charakteryzuje się wysoką wydajnością konwersji dochodzącą do 22%. Przenośny panel słoneczny o mocy 400W generuje więcej energii i działa lepiej niż konwencjonalne panele słoneczne w każdych warunkach pogodowych, nawet w pochmurne lub zimne dni.",
+      "image": "/images/panel-100-2.webp",
+      "price": 2400
+   },
+   {
+      "id": 3,
+      "quantity": 1,
+      "name": "Składany Panel Solarny ALLPOWERS SP035 200W",
+      "description": "To składany i przenośny panel słoneczny przeznaczony do większości generatorów słonecznych. Dzięki wysokowydajnym monokrystalicznym ogniwom słonecznym o sprawności do 24% możesz uzyskać szybsze ładowanie słoneczne w pełnym słońcu. Co więcej, przenośny panel słoneczny ALLPOWERS 200W działa lepiej niż podobne panele polikrystaliczne w warunkach słabego oświetlenia. Może być niezawodnym towarzyszem podczas kempingu lub podróży kamperem, umożliwiając ładowanie słoneczne gdziekolwiek i kiedykolwiek tego potrzebujesz.",
+      "image": "/images/panel-21.webp",
+      "price": 1200
+   },
+   {
+      "id": 4,
+      "quantity": 1,
+      "name": "Przenośny Polikrystaliczny Panel Solarny ALLPOWERS SP029 140W",
+      "description": "Wyjście złącza solarnego może dostarczyć prąd o natężeniu 25A (maks.), podczas gdy port DC obsługuje tylko 10A. Podwójny port USB (5V/2.4A na port) służy do ładowania gadżetów zasilanych napięciem 5V, a wyjście 18V DC (18V/3A) do ładowania laptopa lub akumulatora samochodowego 12V i przenośnego generatora, skrzynka przyłączeniowa posiada port równoległy do łączenia wielu składanych paneli słonecznych.",
+      "image": "/images/panel-140.webp",
+      "price": 720
+   },
+   {
+      "id": 5,
+      "quantity": 1,
+      "name": "Przenośny Polikrystaliczny Panel Solarny ALLPOWERS SP033 200W",
+      "description": "Przenośny panel słoneczny ALLPOWERS 200W ma wydajność do 22% i jest o 1/3 lżejszy niż krzemowe panele słoneczne o tej samej mocy. Wyjście 200W może zapewnić więcej energii dla Twoich urządzeń i ładować je szybciej.",
+      "image": "/images/panel-200-elast.webp",
+      "price": 1200
+   },
+   {
+      "id": 6,
+      "quantity": 1,
+      "name": "Polikrystaliczny Panel Solarny ALLPOWERS SP027 200W",
+      "description": "Zestaw przenośnego panelu słonecznego ALLPOWERS 100W jest produkowany w USA, osiąga wydajność do 22% i jest o 1/3 lżejszy niż krzemowe panele słoneczne o tej samej mocy. Całkowita moc wzrosła o 1/3 w porównaniu z zestawem przenośnych paneli słonecznych o tym samym rozmiarze.",
+      "image": "/images/panel-200.webp",
+      "price": 1250
+   },
+   {
+      "id": 7,
+      "quantity": 1,
+      "name": "Składany Polikrzemowy Panel Solarny ALLPOWERS SP026 400W",
+      "description": "Ogniwo słoneczne 60W wykonane jest z solidniejszego materiału wysokiej jakości, o wydajności do 22%, zapewniając niekończącą się energię dla laptopa i innych akumulatorów w słońcu.",
+      "image": "/images/panel-400.webp",
+      "price": 2400
+   },
+   {
+      "id": 8,
+      "quantity": 1,
+      "name": "Monokrystaliczny Panel Solarny ALLPOWERS SP020 600W",
+      "description": "Panel słoneczny ALLPOWERS 60W to niezawodne i niedrogie źródło zasilania do ładowania laptopa, telefonu, tabletu i innych urządzeń, zarówno w domu, jak i w podróży, ponieważ generuje odnawialną energię elektryczną z energii słonecznej.",
+      "image": "/images/panel-600.webp",
+      "price": 3600
+   },
+   {
+      "id": 9,
+      "quantity": 1,
+      "name": "Monokrystaliczny Panel Solarny ALLPOWERS - 600W zestaw",
+      "description": "Monokrystaliczny panel słoneczny MSW ułatwia rozpoczęcie korzystania z energii odnawialnej! Dzięki wysokiej efektywności energetycznej, potężna bateria fotowoltaiczna przekształca 23% energii słonecznej w energię elektryczną. Struktura monokrystaliczna w połączeniu z najnowszą technologią bocznikowania umożliwia wysoką wydajność nawet w cieniu. Dzięki niewielkim rozmiarom panel słoneczny może być wygodnie używany w domu i w ogrodzie, a także na kempingu lub na łodzi.",
+      "image": "/images/panel-600-zestaw.webp",
+      "price": 3600
+   }
+]
