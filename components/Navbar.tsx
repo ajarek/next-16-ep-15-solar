@@ -1,6 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
 import { SheetNav } from "./SheetNav";
+import LengthCart from "./LengthCart";
+import { ShoppingCart } from "lucide-react";
 
 const Navbar = () => {
     return (
@@ -13,9 +15,9 @@ const Navbar = () => {
                 <Link href="/products">Produkty</Link>
                 <Link href="/services">Usługi</Link>
                 <Link href="/solutions">Rozwiązania</Link>
-                <Link href="/resources">Zasoby</Link>
                 <Link href="/about">O nas</Link>
                 <Link href="/contact">Kontakt</Link>
+                <Link href="/cart" className="relative flex items-center gap-2"><ShoppingCart className=" w-6 h-6" /> <span className="absolute bottom-3 left-4 w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center "><LengthCart /></span></Link>
             </div>
             <SheetNav />
         </nav>

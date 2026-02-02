@@ -5,7 +5,7 @@ import TextType from "./TextType"
 const Header = () => {
   return (
     <div className='relative h-[600px] w-full overflow-hidden'>
-      <Image src='/images/hero.webp' alt='Logo' fill className='object-cover' />
+      <Image src='/images/hero.webp' alt='Logo' fill loading="eager" className='object-cover' />
       <div className='absolute inset-0 bg-black opacity-25'></div>
       <div className='absolute inset-0 flex flex-col items-center justify-center gap-4'>
         <TextType

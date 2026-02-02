@@ -11,8 +11,9 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import { Menu } from "lucide-react"
+import { Menu, ShoppingCart } from "lucide-react"
 import Link from "next/link"
+import LengthCart from "./LengthCart"
 
 export function SheetNav() {
   return (
@@ -30,9 +31,9 @@ export function SheetNav() {
           <Link href='/products' className='hover:underline hover:text-primary transition-all duration-300'>Produkty</Link>
           <Link href='/services' className='hover:underline hover:text-primary transition-all duration-300'>Usługi</Link>
           <Link href='/solutions' className='hover:underline hover:text-primary transition-all duration-300'>Rozwiązania</Link>
-          <Link href='/resources' className='hover:underline hover:text-primary transition-all duration-300'>Zasoby</Link>
           <Link href='/about' className='hover:underline hover:text-primary transition-all duration-300'>O nas</Link>
           <Link href='/contact' className='hover:underline hover:text-primary transition-all duration-300'>Kontakt</Link>
+        <Link href="/cart" className="relative flex items-center gap-2"><ShoppingCart className=" w-6 h-6" /> <span className="absolute bottom-3 left-4 w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center "><LengthCart /></span></Link>
         </div>
         <SheetFooter>
           <SheetClose asChild>

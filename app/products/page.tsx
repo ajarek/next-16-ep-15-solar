@@ -15,9 +15,12 @@ import { Button } from "@/components/ui/button"
 import { useCartStore } from "@/store/cartStore"
 import { useState } from "react"
 import { Minus, Plus } from "lucide-react"
+import { toast } from "sonner"
+import { useRouter } from "next/navigation"
 
 const Products = () => {
-  const { addItemToCart } = useCartStore()
+  const router = useRouter()
+  const { addItemToCart, items } = useCartStore()
   const [quantities, setQuantities] = useState<{ [key: number]: number }>({})
 
   const getQuantity = (id: number) => quantities[id] || 1
@@ -68,9 +71,16 @@ const Products = () => {
                   {panel.price * getQuantity(panel.id)} zł
                 </p>
                 <Button
-                  onClick={() =>
+                  onClick={() => {
+                    if (items.some((i) => i.id === panel.id)) {
+                      toast("Panel jest już w koszyku")
+                      router.push("/cart")
+                      return
+                    }
                     addItemToCart({ ...panel, quantity: getQuantity(panel.id) })
-                  }
+                    toast("Panel został dodany do koszyka")
+                    router.push("/cart")
+                  }}
                 >
                   Dodaj do koszyka
                 </Button>
