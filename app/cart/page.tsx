@@ -54,6 +54,7 @@ const Cart = () => {
                         alt={item.name}
                         width={100}
                         height={100}
+                        className='rounded-lg'
                       />
                       <div className='text-wrap'>
                         <p className='font-bold text-wrap'>{item.name}</p>
