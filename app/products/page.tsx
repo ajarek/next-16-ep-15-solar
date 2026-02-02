@@ -43,16 +43,20 @@ const Products = () => {
     <div className='w-full min-h-screen flex flex-col items-center justify-center mt-16  px-4 lg:px-16'>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 '>
         {panels.map((panel) => (
-          <Card key={panel.id} className='group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 bg-card'>
+          <Card
+            key={panel.id}
+            className='group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 bg-card '
+          >
             <CardHeader className=''>
               <Image
                 src={panel.image}
                 alt={panel.name}
                 width={400}
                 height={400}
+                className='rounded-t-lg '
               />
             </CardHeader>
-            <CardContent className='h-72 flex flex-col justify-between gap-2'>
+            <CardContent className='h-80 flex flex-col justify-between gap-2'>
               <CardTitle>{panel.name}</CardTitle>
               <CardDescription>{panel.description}</CardDescription>
               <div className='flex items-center gap-2'>
