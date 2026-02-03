@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/moving-border";
 import TextType from "./TextType"
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -24,12 +25,14 @@ const Header = () => {
         <p className='text-center text-white text-xl'>
           Uzyskaj bezpłatną wycenę
         </p>
+        <Link href='/products'>
         <Button
         borderRadius="1.75rem"
         className=" bg-transparent border text-xl cursor-pointer hover:bg-primary/50"
       >
-        Zacznij teraz
+        Sprawdź ofertę
       </Button>
+      </Link>
       </div>
     </div>
   )

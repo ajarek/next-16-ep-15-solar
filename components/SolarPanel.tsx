@@ -22,12 +22,14 @@ const SolarPanel = () => {
           <br />
           Napisz na adres: <Link href="mailto:solar_system@poczta.onet.pl" className="text-purple-500">solar_system@poczta.onet.pl</Link>
         </p>
+        <Link href='/services'>
         <Button
           borderRadius='1.75rem'
           className=' bg-transparent border text-xl text-primary cursor-pointer hover:bg-primary/50'
         >
           Dowiedz się więcej
         </Button>
+        </Link>
       </div>
       <div className='relative px-8'>
         <Image

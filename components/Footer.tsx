@@ -156,7 +156,9 @@ const Footer = () => {
                 placeholder='twoj@email.com'
                 className='bg-background'
               />
-              <Button type='submit'>Dołącz</Button>
+              <Button asChild type='submit'>
+                <Link href='/contact'>Dołącz</Link>
+              </Button>
             </div>
           </div>
         </div>
