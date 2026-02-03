@@ -34,7 +34,14 @@ const Cart = () => {
       ) : (
         <div className='w-full flex flex-col gap-4 '>
           <Table>
-            <TableCaption className='w-full text-right text-2xl font-bold pr-4'>Suma: {total().toFixed(2)} PLN</TableCaption>
+            <TableCaption className='w-full text-right text-2xl font-bold pr-4'>
+              <div className="flex justify-between items-center">
+                Suma: {total().toFixed(2)} PLN
+                <Button asChild>
+                  <Link href='/payment'>Przejdź do płatności</Link>
+                </Button>
+              </div>
+              </TableCaption>
             <TableHeader>
               <TableRow className='border-b-2 border-gray-700'>
                 <TableHead>Produkt</TableHead>

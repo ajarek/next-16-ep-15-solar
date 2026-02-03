@@ -10,6 +10,7 @@ import {
 import { Button } from "@/components/ui/button"
 import { ArrowRight, CheckCircle2 } from "lucide-react"
 import { services } from "@/data/services"
+import Link from "next/link"
 
 const Services = () => {
   return (
@@ -87,11 +88,14 @@ const Services = () => {
             </CardContent>
             <CardFooter>
               <Button
+                asChild
                 variant='outline'
-                className='w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all'
+                className='w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all cursor-pointer'
               >
-                Dowiedz się więcej{" "}
-                <ArrowRight className='w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform' />
+                <Link href='/contact'>
+                  Dowiedz się więcej
+                  <ArrowRight className='w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform' />
+                </Link>
               </Button>
             </CardFooter>
           </Card>
@@ -109,11 +113,14 @@ const Services = () => {
             instalacji. Zainwestuj w przyszłość swoją i planety.
           </p>
           <Button
+            asChild
             size='lg'
             variant='secondary'
             className='px-8 py-6 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105'
           >
-            Zamów darmową wycenę
+            <Link href='/contact'>
+              Zamów darmową wycenę
+            </Link>
           </Button>
         </div>
         {/* Decorative background element */}
