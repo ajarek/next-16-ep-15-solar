@@ -17,7 +17,6 @@ export default function ContactPage() {
   }
   return (
     <div className='flex flex-col gap-16 pt-16 pb-16'>
-      {/* Hero Section */}
       <div className='relative h-80 w-full overflow-hidden'>
         <Image
           src='/images/solar-homes.webp'
@@ -44,7 +43,6 @@ export default function ContactPage() {
 
       <div className='container mx-auto px-4 lg:px-16'>
         <div className='grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-12 items-start'>
-          {/* Left Column: Contact Info */}
           <div className='space-y-8'>
             <div className='space-y-4'>
               <h2 className='text-3xl font-bold'>Znajdź nas</h2>
@@ -119,9 +117,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* Right Column: Contact Form */}
           <div className='bg-card rounded-3xl p-8 shadow-2xl border relative overflow-hidden'>
-            {/* Decorative background blob */}
             <div className='absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-primary/5 rounded-full blur-3xl' />
             <div className='absolute bottom-0 left-0 -ml-20 -mb-20 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl' />
 
@@ -187,12 +183,10 @@ export default function ContactPage() {
         </div>
       </div>
 
-      {/* Map Section Idea (Creative Visual) */}
       <div className='container mx-auto px-4 lg:px-16'>
         <div className='relative h-[400px] w-full rounded-3xl overflow-hidden shadow-xl group'>
-          {/* Uses an image as a placeholder for a map or office view */}
           <Image
-            src='/images/panel-600-zestaw.webp' // Used as a creative placeholder or "Our installations map" vibe
+            src='/images/panel-600-zestaw.webp'
             alt='Office Location'
             fill
             className='object-cover group-hover:scale-105 transition-transform duration-700'

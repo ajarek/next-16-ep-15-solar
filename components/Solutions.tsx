@@ -18,41 +18,49 @@ const Solutions = () => {
               alt='Smart Help'
               width={600}
               height={600}
-            className='rounded-lg'
-          />
-          <div className='absolute bottom-10 left-10 text-2xl text-white font-bold'>Serwis</div>
+              className='rounded-lg'
+            />
+            <div className='absolute bottom-10 left-10 text-2xl text-white font-bold'>
+              Serwis
+            </div>
           </div>
-          <div className='relative'>  
-          <Image
-            src='/images/smart-help-5.webp'
-            alt='Smart Help'
-            width={900}
-            height={600}
-            className='rounded-lg'
-          />
-          <div className='absolute bottom-10 left-10 text-2xl text-white font-bold'>Planowanie</div>
+          <div className='relative'>
+            <Image
+              src='/images/smart-help-5.webp'
+              alt='Smart Help'
+              width={900}
+              height={600}
+              className='rounded-lg'
+            />
+            <div className='absolute bottom-10 left-10 text-2xl text-white font-bold'>
+              Planowanie
+            </div>
           </div>
         </div>
         <div className='flex flex-col   lg:flex-row items-center gap-4'>
           <div className='relative'>
-          <Image
-            src='/images/smart-help-2.webp'
-            alt='Smart Help'
-            width={900}
-            height={600}
-            className='rounded-lg'
-          />
-          <div className='absolute bottom-10 left-10 text-2xl text-white font-bold'>Montaż</div>
+            <Image
+              src='/images/smart-help-2.webp'
+              alt='Smart Help'
+              width={900}
+              height={600}
+              className='rounded-lg'
+            />
+            <div className='absolute bottom-10 left-10 text-2xl text-white font-bold'>
+              Montaż
+            </div>
           </div>
-          <div className="relative">
-          <Image
-            src='/images/smart-help-6.webp'
-            alt='Smart Help'
-            width={600}
-            height={600}
-            className='rounded-lg'
-          />
-          <div className='absolute bottom-10 left-10 text-2xl text-white font-bold'>Finansowanie</div>
+          <div className='relative'>
+            <Image
+              src='/images/smart-help-6.webp'
+              alt='Smart Help'
+              width={600}
+              height={600}
+              className='rounded-lg'
+            />
+            <div className='absolute bottom-10 left-10 text-2xl text-white font-bold'>
+              Finansowanie
+            </div>
           </div>
         </div>
       </div>

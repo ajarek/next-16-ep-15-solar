@@ -7,7 +7,9 @@ const SolarPanel = () => {
     <div className='grid flex-col-reverse grid-cols-1 md:grid-cols-2 gap-4 px-4 md:px-8'>
       <div className='w-full max-w-xl flex flex-col justify-center gap-4 px-4 md:px-8'>
         <p>Panele Słoneczne</p>
-        <h1 className="text-4xl font-bold">Wysokiej jakości panele słoneczne do domu.</h1>
+        <h1 className='text-4xl font-bold'>
+          Wysokiej jakości panele słoneczne do domu.
+        </h1>
         <p>
           Zapewniamy kompleksową obsługę od projektu po instalację.
           <br />
@@ -20,15 +22,21 @@ const SolarPanel = () => {
           <br />
           Zadzwoń pod numer: 123-456-789
           <br />
-          Napisz na adres: <Link href="mailto:solar_system@poczta.onet.pl" className="text-purple-500">solar_system@poczta.onet.pl</Link>
+          Napisz na adres:{" "}
+          <Link
+            href='mailto:solar_system@poczta.onet.pl'
+            className='text-purple-500'
+          >
+            solar_system@poczta.onet.pl
+          </Link>
         </p>
         <Link href='/services'>
-        <Button
-          borderRadius='1.75rem'
-          className=' bg-transparent border text-xl text-primary cursor-pointer hover:bg-primary/50'
-        >
-          Dowiedz się więcej
-        </Button>
+          <Button
+            borderRadius='1.75rem'
+            className=' bg-transparent border text-xl text-primary cursor-pointer hover:bg-primary/50'
+          >
+            Dowiedz się więcej
+          </Button>
         </Link>
       </div>
       <div className='relative px-8'>

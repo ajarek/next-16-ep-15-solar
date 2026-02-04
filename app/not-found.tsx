@@ -10,7 +10,9 @@ export default function NotFound() {
         </h1>
 
         <p className='max-w-lg  text-lg px-4'>
-          Strona, której próbujesz się dostać, nie jest dostępna lub adres jest niepoprawny. Spróbuj zwrócenia się do strony głównej lub zweryfikowania adresu URL.
+          Strona, której próbujesz się dostać, nie jest dostępna lub adres jest
+          niepoprawny. Spróbuj zwrócenia się do strony głównej lub
+          zweryfikowania adresu URL.
         </p>
 
         <div className='flex gap-3'>

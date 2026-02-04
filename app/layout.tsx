@@ -30,25 +30,25 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-    <html lang='pl' suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-         <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
+      <html lang='pl' suppressHydrationWarning>
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+          <ThemeProvider
+            attribute='class'
+            defaultTheme='system'
             enableSystem
             disableTransitionOnChange
           >
-        <div className='w-full max-w-[1520px] mx-auto'>
-          <Navbar />
-          {children}
-          <Footer />
-        </div>
-         <Toaster />
-         </ThemeProvider>
-      </body>
-    </html>
+            <div className='w-full max-w-[1520px] mx-auto'>
+              <Navbar />
+              {children}
+              <Footer />
+            </div>
+            <Toaster />
+          </ThemeProvider>
+        </body>
+      </html>
     </ClerkProvider>
   )
 }

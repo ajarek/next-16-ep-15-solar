@@ -15,7 +15,6 @@ import Link from "next/link"
 const Services = () => {
   return (
     <div className='flex flex-col gap-10 pb-20'>
-      {/* Hero Section */}
       <div className='relative h-[400px] w-full overflow-hidden  shadow-2xl'>
         <Image
           src='/images/solar-homes.webp'
@@ -36,7 +35,6 @@ const Services = () => {
         </div>
       </div>
 
-      {/* Intro Text */}
       <div className='px-4 md:px-8 text-center max-w-3xl mx-auto py-8'>
         <h2 className='text-3xl font-bold mb-4'>W czym możemy Ci pomóc?</h2>
         <p className='text-muted-foreground text-lg'>
@@ -46,7 +44,6 @@ const Services = () => {
         </p>
       </div>
 
-      {/* Services Grid */}
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-8 lg:px-12'>
         {services.map((service, index) => (
           <Card
@@ -102,7 +99,6 @@ const Services = () => {
         ))}
       </div>
 
-      {/* CTA Section */}
       <div className='mt-12 mx-4 md:mx-8 rounded-3xl overflow-hidden relative bg-primary text-primary-foreground py-16 px-8 text-center shadow-xl'>
         <div className='relative z-10 flex flex-col items-center gap-6'>
           <h2 className='text-3xl md:text-4xl font-bold'>
@@ -118,12 +114,10 @@ const Services = () => {
             variant='secondary'
             className='px-8 py-6 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105'
           >
-            <Link href='/contact'>
-              Zamów darmową wycenę
-            </Link>
+            <Link href='/contact'>Zamów darmową wycenę</Link>
           </Button>
         </div>
-        {/* Decorative background element */}
+
         <div className='absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2' />
         <div className='absolute bottom-0 left-0 w-64 h-64 bg-black/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2' />
       </div>

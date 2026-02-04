@@ -16,7 +16,8 @@ import {
 import { Minus, Plus, Trash } from "lucide-react"
 
 const Cart = () => {
-  const { items, total, increment, decrement, removeItemFromCart } = useCartStore()
+  const { items, total, increment, decrement, removeItemFromCart } =
+    useCartStore()
   return (
     <div className='w-full min-h-screen flex flex-col items-start justify-start mt-16  px-4 lg:px-16'>
       <div className='flex justify-between items-center py-10'>
@@ -35,13 +36,13 @@ const Cart = () => {
         <div className='w-full flex flex-col gap-4 '>
           <Table>
             <TableCaption className='w-full text-right text-2xl font-bold pr-4'>
-              <div className="flex justify-between items-center">
+              <div className='flex justify-between items-center'>
                 Suma: {total().toFixed(2)} PLN
                 <Button asChild>
                   <Link href='/payment'>Przejdź do płatności</Link>
                 </Button>
               </div>
-              </TableCaption>
+            </TableCaption>
             <TableHeader>
               <TableRow className='border-b-2 border-gray-700'>
                 <TableHead>Produkt</TableHead>
@@ -69,33 +70,38 @@ const Cart = () => {
                     </div>
                   </TableCell>
                   <TableCell>{item.price.toFixed(2)}</TableCell>
-                  <TableCell>  <div className='flex flex-col items-center justify-center'>
-              <Button
-                variant='outline'
-                className='w-8 h-8 flex items-center justify-center rounded-lg border-2 border-primary cursor-pointer'
-                onClick={() => decrement(item.id)}
-              >
-                <Minus/>
-              </Button>
-              <span className='w-6 h-8 flex items-center justify-center font-semibold cursor-pointer'>
-                {item.quantity}
-              </span>
-              <Button
-                variant='outline'
-                className='w-8 h-8 flex items-center justify-center rounded-lg border-2 border-primary cursor-pointer'
-                onClick={() => increment(item.id)}
-              >
-                <Plus/>
-              </Button>
-            </div></TableCell>
-                  <TableCell>{(item.price * (item.quantity ?? 1)).toFixed(2)}</TableCell>
+                  <TableCell>
+                    {" "}
+                    <div className='flex flex-col items-center justify-center'>
+                      <Button
+                        variant='outline'
+                        className='w-8 h-8 flex items-center justify-center rounded-lg border-2 border-primary cursor-pointer'
+                        onClick={() => decrement(item.id)}
+                      >
+                        <Minus />
+                      </Button>
+                      <span className='w-6 h-8 flex items-center justify-center font-semibold cursor-pointer'>
+                        {item.quantity}
+                      </span>
+                      <Button
+                        variant='outline'
+                        className='w-8 h-8 flex items-center justify-center rounded-lg border-2 border-primary cursor-pointer'
+                        onClick={() => increment(item.id)}
+                      >
+                        <Plus />
+                      </Button>
+                    </div>
+                  </TableCell>
+                  <TableCell>
+                    {(item.price * (item.quantity ?? 1)).toFixed(2)}
+                  </TableCell>
                   <TableCell>
                     <Button
                       variant='outline'
                       className='w-8 h-8 flex items-center justify-center rounded-lg border-2 border-red-500 cursor-pointer'
                       onClick={() => removeItemFromCart(item.id)}
                     >
-                      <Trash/>
+                      <Trash />
                     </Button>
                   </TableCell>
                 </TableRow>

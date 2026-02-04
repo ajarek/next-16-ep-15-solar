@@ -8,7 +8,6 @@ import Link from "next/link"
 export default function AboutPage() {
   return (
     <div className='flex flex-col gap-16 pt-16 '>
-      {/* Hero Section */}
       <div className='relative h-60 w-full  '>
         <Image
           src='/images/hero.webp'
@@ -30,7 +29,6 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* Mission Section */}
       <div className='container mx-auto px-4 lg:px-16'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
           <div className='space-y-6'>
@@ -54,7 +52,9 @@ export default function AboutPage() {
             </p>
             <div className='pt-4'>
               <Link href='/products'>
-                <Button className='cursor-pointer'>Poznaj nasze produkty</Button>
+                <Button className='cursor-pointer'>
+                  Poznaj nasze produkty
+                </Button>
               </Link>
             </div>
           </div>
@@ -65,13 +65,11 @@ export default function AboutPage() {
               fill
               className='object-cover transition-transform duration-700 group-hover:scale-105'
             />
-            {/* Overlay gradient */}
             <div className='absolute inset-0 bg-linear-to-t from-black/50 to-transparent' />
           </div>
         </div>
       </div>
 
-      {/* Stats Section */}
       <div className='bg-primary text-primary-foreground py-16'>
         <div className='container mx-auto px-4'>
           <div className='grid grid-cols-2 lg:grid-cols-4 gap-8 text-center'>
@@ -92,7 +90,6 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* Values Section */}
       <div className='container mx-auto px-4 space-y-12'>
         <div className='text-center max-w-3xl mx-auto space-y-4'>
           <h2 className='text-3xl font-bold'>Dlaczego My?</h2>
@@ -124,7 +121,6 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* CTA Bottom */}
       <div className='container mx-auto px-4 lg:px-16'>
         <div className='relative rounded-3xl overflow-hidden bg-zinc-900 text-white p-8 md:p-16 text-center'>
           <div className='absolute inset-0 opacity-20'>
